@@ -164,55 +164,55 @@
 
         public static IDataFrame ReadIrisData()
         {
-            DataTable dt = ReadCsvIntoDataTable(@"DataSets\IrisData.txt", true);
+            DataTable dt = ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\IrisData.txt", true);
             return new DataFrame(dt);
         }
 
         public static IDataFrame ReadAdultCensusDataFrame()
         {
-            DataTable dt = ReadCsvIntoDataTable(@"DataSets\AdultCensusIncomeBinaryClassification.txt", true);
+            DataTable dt = ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\AdultCensusIncomeBinaryClassification.txt", true);
             return new DataFrame(dt);
         }
 
         public static IDataFrame ReadCongressData()
         {
-            DataTable dt = ReadCsvIntoDataTable(@"DataSets\CongressVoting.txt", true);
+            DataTable dt = ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\CongressVoting.txt", true);
             return new DataFrame(dt);
         }
 
         public static IDataFrame ReadWeatherDataWithCategoricalAttributes()
         {
-            return new DataFrame(ReadCsvIntoDataTable(@"DataSets\WeatherData.txt", true));
+            return new DataFrame(ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\WeatherData.txt", true));
         }
 
         public static IDataFrame ReadWeatherDataWithMixedAttributes()
         {
-            return new DataFrame(ReadCsvIntoDataTable(@"DataSets\WeatherDataNumeric.txt", true));
+            return new DataFrame(ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\WeatherDataNumeric.txt", true));
         }
 
         public static IDataFrame ReadMushroomDataWithCategoricalAttributes()
         {
-            return new DataFrame(ReadCsvIntoDataTable(@"DataSets\Mushroom.txt", true));
+            return new DataFrame(ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\Mushroom.txt", true));
         }
 
         public static IDataFrame ReadHousingData()
         {
-            return new DataFrame(ReadCsvIntoDataTable(@"DataSets\Housing.txt", true));
+            return new DataFrame(ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\Housing.txt", true));
         }
 
         public static IDataFrame ReadHousingDataNormalizedAttrs()
         {
-            return new DataFrame(ReadCsvIntoDataTable(@"DataSets\HousingNormalized.txt", true));
+            return new DataFrame(ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\HousingNormalized.txt", true));
         }
 
         public static IDataFrame ReadTitanicData()
         {
-            return new DataFrame(ReadCsvIntoDataTable(@"DataSets\titanic_train_data.txt", true));
+            return new DataFrame(ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\titanic_train_data.txt", true));
         }
 
         public static IDataFrame ReadTitanicQuery()
         {
-            return new DataFrame(ReadCsvIntoDataTable(@"DataSets\cleaned_test.csv", true));
+            return new DataFrame(ReadCsvIntoDataTable(@"BrainSharperTests\DataSets\cleaned_test.csv", true));
         }
 
         private static DataTable ReadCsvIntoDataTable(string filepath, bool isFirstRowHeader)
